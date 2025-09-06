@@ -191,20 +191,23 @@
     <section id="practiceSection">
         <h2>Practice Quadratics</h2>
         <div class="practice-area">
-            <label for="questionType">Select a question type:</label>
-            <select id="questionType">
+            <!-- Updated practice selector and button to match script.js expectations -->
+            <label for="practiceType">Select a question type:</label>
+            <select id="practiceType">
                 <option value="vertexToGeneral">Vertex to General Form</option>
                 <option value="discriminant">Discriminant &amp; Solutions</option>
                 <option value="solveQuadratic">Solve a Quadratic</option>
                 <option value="ballProblem">Projectile Motion</option>
                 <option value="frameProblem">Picture Frame Problem</option>
             </select>
-            <button onclick="generateQuestion()">Generate</button>
+            <!-- The generate button is now identified by an ID; its click handler is set in script.js -->
+            <button id="generateQuestionBtn">Generate Question</button>
         </div>
-        <div id="questionDisplay"></div>
-        <div id="answerDisplay"></div>
+        <!-- Container for dynamically inserted practice questions and solutions -->
+        <div id="practiceContainer"></div>
     </section>
 
+    <!-- Load the JavaScript for the app -->
     <script src="script.js"></script>
 </body>
 </html>
